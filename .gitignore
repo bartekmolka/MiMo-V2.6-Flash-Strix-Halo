@@ -1,0 +1,19 @@
+# Secrets — copy .env.sample to .env locally; never commit
+.env
+
+# ~107 GB model checkpoint (downloaded by start.sh, bind-mounted read-only)
+models/
+
+# Kyojin / HIP / HuggingFace caches (kernel + GEMM autotune, download cache)
+.cache/
+
+# Engine log streamed by start.sh
+.mimo26.log
+
+# Editor / OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+__pycache__/
+*.pyc
